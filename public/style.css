@@ -1,0 +1,271 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.center {
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-size: 1.25em;
+}
+
+.page {
+  background-color: #4d4d4d;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+}
+
+.thead {
+  font-weight: bold;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.ros-header {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.ros-col-num {
+  display: inline-block;
+  width: 50%;
+}
+
+.ros-col-name {
+  display: inline-block;
+  width: 50%;
+}
+
+.ros-col-pos {
+  display: none;
+}
+
+.ros-col-cls {
+  display: none;
+}
+
+.sched-col-dt {
+  display: inline-block;
+  width: 50%;
+}
+
+.sched-col-day {
+  display:none;
+}
+
+.sched-col-opp {
+  display: inline-block;
+  width: 50%
+}
+
+.sched-col-site {
+  display: none;
+}
+
+.sched-col-time {
+  display: none;
+}
+
+.spons-header {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.spons-row {
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+.about-header {
+  margin-top: .33em;
+  margin-bottom: .33em;
+}
+
+nav {
+  background-color: #660033;
+  overflow: hidden;
+  padding: 1em;
+  /* border-bottom: 1px solid #000; */ */
+}
+nav a {
+  color: #fff;
+}
+nav a:visited {
+  color: #fff;
+}
+nav .navWide {
+  display: none;
+  margin: 0 auto;
+}
+nav .navWide .wideDiv {
+  text-align: center;
+}
+nav .navWide .wideDiv a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 0.5em;
+  vertical-align: top;
+}
+nav .navNarrow i {
+  float: left;
+  cursor: pointer;
+  color: #fff;
+}
+nav .navNarrow .narrowLinks {
+  display: none;
+}
+nav .navNarrow .narrowLinks a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  clear: left;
+  padding: 0.5em 0;
+}
+
+nav .dropdown {
+  float: none;
+  display: inline-block;
+  overflow: hidden;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #666666;
+}
+
+nav .dropdown .dropbtn {
+  /* font-size: 16px; */
+  /* width: 124px; */
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 2em;
+  background-color: inherit;
+  font-family: inherit;
+  /* margin: 0; */
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 148px;
+  padding: 0;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  float: left;
+  color: black;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 90%;
+  max-width: 148px;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  nav .navWide {
+    display: block;
+  }
+  nav .navNarrow {
+    display: none;
+  }
+
+  .center {
+    font-size: 2em;
+  }
+
+  .ros-col-num {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .ros-col-name {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .ros-col-pos {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .ros-col-cls {
+    display: inline-block;
+    width: 25%
+  }
+
+  .sched-col-dt {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .sched-col-day {
+    display:inline-block;
+    width: 20%;
+  }
+
+  .sched-col-opp {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .sched-col-site {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .sched-col-time {
+    display: inline-block;
+    width: 20%;
+  }
+
+  li {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+}
